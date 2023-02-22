@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang = "en">
+<body>
+<style>
+    .wufoo {
+        font-family: "Lucida Grande","Lucida Sans Unicode", Tahoma, sans-serif;
+    }
+</style>
+<form method="get" action="codegym.html">
+    <h2>Order Form</h2>
+    <p><b>What would you like to buy?</b></p>
+    <select name="cost" >
+        <option value = " cost1 ">A</option>
+        <option value = " cost2 " >B (+  0.5$)</option>
+        <option value = " cost2 " >C (+  0.5$)</option>
+    </select>
+    <b>
+    <p>How many would you like to order?</p>
+    <label><input name="cost" value="travel" type="radio" checked/> 1- $10</label> <br/>
+    <label><input name="cost" value="sport" type="radio"/> 2- $15</label> <br/>
+    <label><input name="cost" value="cooking" type="radio"/> 3- $20</label> <br/>
+    </b>
+
+    <p><b>Name</b> <span style="color: red">*</span> </p>
+    <input type = "text" name="firstname" placeholder="FirstName" size="15"/>
+    <input type = "text" name="lastname" placeholder="LastName" size="15"/>
+    <p><b>Email</b></p>
+    <input type = "text" name="email" size="35"/>
+    <p><b> Phone Number</b></p>
+    <input type = "text" name="phone1" size="5"/> -
+    <input type = "text" name="phone2" size="5"/> -
+    <input type = "text" name="phone3" size="5"/>
+
+    <br>
+    <br><input type="submit" value="Submit">
+</form>
+</body>
+
+</html>
