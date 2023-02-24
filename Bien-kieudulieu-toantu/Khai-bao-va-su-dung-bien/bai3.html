@@ -7,8 +7,10 @@
 
 <script>
     
-    value_first = prompt("Nhập giá trị của số thứ nhất: ");
-    value_second = prompt("Nhập giá trị của số thứ hai: ");
+    value_first = +prompt("Nhập giá trị của số thứ nhất: ");
+    value_second = +prompt("Nhập giá trị của số thứ hai: ");
+
+    alert(value_first+value_second)
     if (value_first % value_second==0)
     {
         alert("số thứ nhất chia hết cho số thứ 2")
