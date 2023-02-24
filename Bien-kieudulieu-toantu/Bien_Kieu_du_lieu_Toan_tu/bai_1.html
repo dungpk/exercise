@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<script>
+
+    let mathScore;
+    let physicScore;
+    let chemistryScore;
+    let average;
+    let total;
+
+    mathScore = +prompt("Nhập điểm toán: ");
+    physicScore = +prompt("Nhập điểm lý: ");
+    chemistryScore = +prompt("Nhập điểm hóa: ");
+
+    average = (mathScore + physicScore + chemistryScore)/3
+    total = mathScore + physicScore + chemistryScore
+    document.write("Điểm trung bình là: " + average);
+    document.write("<BR>"); // Xuống dòng
+    document.write("Tổng điểm  là: " + total);
+
+</script>
+
+</html>
+
+
