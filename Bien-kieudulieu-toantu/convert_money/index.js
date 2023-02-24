@@ -3,7 +3,7 @@ function convertMoney(){
     let FromCurrency = document.getElementById("FromCurrency").value;
     let ToCurrency= document.getElementById("ToCurrency").value;
     let Result;
-    
+
     if (FromCurrency == "USD" && ToCurrency == "VND"){
         Result = "Result:" + (quantity*23000)+ " Đồng"
         }
@@ -16,5 +16,9 @@ function convertMoney(){
         else {
             Result= "Result:" + quantity + " $"
         }
+        if(typeof Result != 'number')
+        {
+            alert('Mày phải nhập số vào thằng ngu !');
+        }else
             document.getElementById("Result").innerHTML= Result
     }
