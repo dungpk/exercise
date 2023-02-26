@@ -1,0 +1,14 @@
+Read(a);
+
+Read(b);
+
+Read(c);
+
+if a <= 0 => "Không phải 3 cạnh tam giác"
+if a <= 0 => "Không phải 3 cạnh tam giác"
+if a <= 0 => "Không phải 3 cạnh tam giác"
+
+if(a+b>c) && (a+c>b) && (b+c>a)
+=> "3 cạnh là độ dài 3 cạnh của một tam giác"
+else 
+=> "Không phải 3 cạnh tam giác"

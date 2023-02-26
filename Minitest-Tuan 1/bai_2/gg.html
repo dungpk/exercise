@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+<input type="number", id="value1"/>
+<input type="number", id="value2"/>
+<button type="button" onclick="add()" value="+" style="padding: 5px">+</button>
+<button type="button" onclick="minus()" value="-" style="padding: 5px">-</button>
+<button type="button" onclick="multiply()" value="*" style="padding: 5px">*</button>
+<button type="button" onclick="divide()" value="/" style="padding: 5px">/</button>
+<script>
+  function add(){
+    let value1 = document.getElementById("value1").value;
+    let value2 = document.getElementById("value2").value;
+    total = parseInt(value1)+ parseInt(value2);
+    document.getElementById("result").innerHTML= total;
+
+  }
+  function minus(){
+    let value1 = document.getElementById("value1").value;
+    let value2 = document.getElementById("value2").value;
+    hieu = parseInt(value1) - parseInt(value2);
+    document.getElementById("result").innerHTML = hieu;
+  }
+  function multiply(){
+    let value1 = document.getElementById("value1").value;
+    let value2 = document.getElementById("value2").value;
+    tich = parseInt(value1) * parseInt(value2);
+    document.getElementById("result").innerHTML = tich;
+  }
+  function divide() {
+    let value1 = document.getElementById("value1").value;
+    let value2 = document.getElementById("value2").value;
+    thuong = parseInt(value2) / parseInt(value2);
+    document.getElementById("result").innerHTML = thuong;
+  }
+</script>
+<p id="result"></p>
+</body>
+</html>
